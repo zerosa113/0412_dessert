@@ -1,0 +1,254 @@
+/* body {
+    background-color: rgb(255, 232, 237);
+    background-image: url(./img/0411/heather-barnes-WbZesfqwR-A-unsplash.jpg);
+    background-size: cover;
+    opacity: .5;
+    padding: 0 2rem;
+} */
+
+.bgImg {
+    position: relative;
+}
+
+.bgImg::before {
+    content: "";
+    display: block;
+    background-size: cover;
+    background-image: url(./img/0411/heather-barnes-WbZesfqwR-A-unsplash.jpg);
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    position: absolute;
+    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bgImg .content {
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* left: 0;
+    top: 0; */
+    width: 100%;
+    z-index: 99;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+    height: 90px;
+}
+
+.navbar .nav {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: pink;
+    right: 40%;
+}
+
+.navbar .btn {
+    position: relative;
+    display: flex;
+    left: 40%;
+}
+
+.container .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+.title-text>h1 {
+    width: 50%;
+    margin-left: 5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.container .title .title-text>p {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 100px;
+}
+
+.title .title-img {
+    width: 500px;
+    /* height: 500px; */
+    display: flex;
+    justify-content: end;
+    margin-right: 80px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sale .sale-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.sale .sale-img .img1 {
+    /* padding-left: 10%; */
+    border-bottom: 3px solid black;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sale .sale-img .img1>img {
+    width: 300px;
+    margin: 10px;
+    margin-bottom: 50px;
+
+}
+
+.item {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    background-color: palevioletred;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    bottom: 70px;
+}
+
+
+.news .new-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.news .new-img .new {
+    height: 350px;
+    margin: 10px;
+    margin-bottom: 50px;
+    background-color: white;
+    position: relative;
+
+}
+
+.new-img .new img {
+    width: 300px
+}
+
+.new>p {
+    position: absolute;
+    left: 5%;
+    width: 300px;
+    text-align: inherit;
+
+}
+
+.new-img .new .news-detail {
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    background-color: #484848;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100PX;
+}
+
+.more .more-btn {
+    background-color: palevioletred;
+    color: white;
+    font-size: xx-large;
+    border: 0cm;
+    width: 200PX;
+    height: 80PX;
+    text-align: center;
+}
+
+.arrival {
+    margin-bottom: 100PX;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.arrival .box {
+    background-color: palevioletred;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin-left: 100px;
+}
+
+.arrival img {
+    height: 250px;
+    position: absolute;
+    top: 70px;
+    left: 350px;
+}
+
+.arrival .newArrival {
+    background-color: rgb(255, 192, 199);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.arrival .newArrival>p {
+    text-align: inherit;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.container .footer {
+    background-color: palevioletred;
+    width: 100%;
+    height: 80px;
+}
+
+.container .footer p {
+    color: black;
+    text-align: center;
+    line-height: 80px;
+}
